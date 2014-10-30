@@ -43,9 +43,8 @@ class MyTestCase(unittest.TestCase):
 		self.assertEqual(r1, 1.17)
 
 	def test_t11(self):
-		r1 = Experiment.average([-3,-2,-3,"-1",-4]) 
-		self.assertRaises(ValueError, Experiment.largest, [])
+		self.assertRaises(ValueError, Experiment.average, [-3,-2,-3,"-1",-4])
 
 	def test_t12(self):
-		self.assertRaises(ValueError, Experiment.largest, [])
+		self.assertRaises(ValueError, Experiment.average, [])
 
