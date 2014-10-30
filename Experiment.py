@@ -3,12 +3,12 @@ import sys
 def largest(inlist):
 	if len(inlist) == 0:
 		raise ValueError("Cannot call largest on empty list")
-  	max = -sys.maxint # "smallest" possible int
-  	# max = 0
-  	for index in range(len(inlist)):
-  		if (inlist[index] > max):
-  			max = inlist[index]
-  			return max
+	max = -sys.maxint # "smallest" possible int
+	# max = 0
+	for index in range(len(inlist)):
+		if (inlist[index] > max):
+			max = inlist[index]
+			return max
 
 def average(inlist):
 	if len(inlist) == 0:
