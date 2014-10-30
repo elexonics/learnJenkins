@@ -18,7 +18,7 @@ def average(inlist):
 	for num in inlist:
 		try:
 			f_num = float(num)
-		except ValueError:
+		except:
 			raise ValueError("Non-number element in list")
 		else:
 			sum += f_num
