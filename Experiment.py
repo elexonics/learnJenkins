@@ -8,7 +8,7 @@ def largest(inlist):
 	for index in range(len(inlist)):
 		if (inlist[index] > max):
 			max = inlist[index]
-			return max
+	return max
 
 def average(inlist):
 	if len(inlist) == 0:
