@@ -22,4 +22,4 @@ def average(inlist):
 			raise ValueError("Non-number element in list")
 		else:
 			sum += f_num
-	return sum/len(inlist)
+	return round(sum/len(inlist), 2)
